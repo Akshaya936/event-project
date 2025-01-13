@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const eventsList = document.getElementById('events-list');
 
     // Fetch events from the backend
-    fetch('http://localhost:3000/events')
+    fetch('http://localhost:4000/events')
         .then(response => response.json())
         .then(events => {
             events.forEach(event => {
